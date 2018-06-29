@@ -7,8 +7,8 @@
                         NS      a.com.
                         NS      b.com.
 
-a.notsigned.com.	A	127.0.0.22
-b.notsigned.com.	A	127.0.0.22
-notsigned.com.    	A	127.0.0.22
+a.notsigned.com.	A	192.168.99.122
+b.notsigned.com.	A	192.168.99.122
+notsigned.com.    	A	192.168.99.122
 
 $INCLUDE joe-gpg-key

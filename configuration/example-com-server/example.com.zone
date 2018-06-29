@@ -7,9 +7,9 @@
                         NS      a.com.
                         NS      b.com.
 
-a.example.com.	A	127.0.0.20
-b.example.com.	A	127.0.0.20
-example.com.    A	127.0.0.20
+a.example.com.	A	192.168.99.120
+b.example.com.	A	192.168.99.120
+example.com.    A	192.168.99.120
 
 $INCLUDE repomd
 

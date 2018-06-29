@@ -7,25 +7,25 @@
                         NS      a.com.
                         NS      b.com.
 
-a.com.	A	127.0.0.10
-b.com.	A	127.0.0.10
-com.    A	127.0.0.10
+a.com.	A	192.168.99.110
+b.com.	A	192.168.99.110
+com.    A	192.168.99.110
 
 ; Delegated external zone with its own nameservers (and glue records)
 example.com.      IN      NS      a.example.com.
 example.com.      IN      NS      b.example.com.
-a.example.com.    IN      A       127.0.0.20
-b.example.com.    IN      A       127.0.0.20
+a.example.com.    IN      A       192.168.99.120
+b.example.com.    IN      A       192.168.99.120
 
 wrongconfig.com.      IN      NS      a.wrongconfig.com.
 wrongconfig.com.      IN      NS      b.wrongconfig.com.
-a.wrongconfig.com.    IN      A       127.0.0.21
-b.wrongconfig.com.    IN      A       127.0.0.21
+a.wrongconfig.com.    IN      A       192.168.99.121
+b.wrongconfig.com.    IN      A       192.168.99.121
 
 notsigned.com.      IN      NS      a.notsigned.com.
 notsigned.com.      IN      NS      b.notsigned.com.
-a.notsigned.com.    IN      A       127.0.0.22
-b.notsigned.com.    IN      A       127.0.0.22
+a.notsigned.com.    IN      A       192.168.99.122
+b.notsigned.com.    IN      A       192.168.99.122
 
 $INCLUDE Kcom.+005+23926.key
 $INCLUDE Kcom.+005+49098.key

@@ -7,9 +7,9 @@
                         NS      a.wrongconfig.com.
                         NS      b.wrongconfig.com.
 
-a.wrongconfig.com.	A	127.0.0.21
-b.wrongconfig.com.	A	127.0.0.21
-wrongconfig.com.        A	127.0.0.21
+a.wrongconfig.com.	A	192.168.99.121
+b.wrongconfig.com.	A	192.168.99.121
+wrongconfig.com.        A	192.168.99.121
 
 $INCLUDE Kwrongconfig.com.+005+17449.key
 $INCLUDE Kwrongconfig.com.+005+46071.key

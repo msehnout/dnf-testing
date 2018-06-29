@@ -7,15 +7,15 @@
 			NS      a.
 			NS      b.
 
-a.	A	127.0.0.1
-b.	A	127.0.0.1
-.	A	127.0.0.1
+a.	A	192.168.99.101
+b.	A	192.168.99.101
+.	A	192.168.99.101
 
 ; Delegated external zone with its own nameservers (and glue records)
 com.      IN        NS      a.com.
 com.      IN        NS      b.com.
-a.com.    IN        A       127.0.0.10
-b.com.    IN        A       127.0.0.10
+a.com.    IN        A       192.168.99.110
+b.com.    IN        A       192.168.99.110
 
 
 ; Delegated external zone with its own nameservers (and glue records)
