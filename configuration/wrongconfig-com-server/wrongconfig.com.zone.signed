@@ -1,0 +1,111 @@
+; File written on Sat Feb 24 20:03:10 2018
+; dnssec_signzone version 9.11.2-P1-RedHat-9.11.2-1.P1.fc27
+wrongconfig.com.	86400	IN SOA	a.wrongconfig.com. admin.a.wrongconfig.com. (
+					199609204  ; serial
+					28800      ; refresh (8 hours)
+					7200       ; retry (2 hours)
+					604800     ; expire (1 week)
+					86400      ; minimum (1 day)
+					)
+			86400	RRSIG	SOA 5 2 86400 (
+					20180326180310 20180224180310 46071 wrongconfig.com.
+					Hzie7TIP1gZOqX/1tX7H54nxaUsAEMHnDD1b
+					vCzkjnR0ibHS2uygslz0ifE4uY2NVmmLRCF8
+					9hXHF96Ttg8pMAYh3ZXRufMN8JST3LfhlEBJ
+					m+Be5fcR+5/NFFNbwAVj0gKda47FEKQqpCWX
+					gdtxlnRpSGTQdniamuWQE/NfV2A= )
+			86400	NS	a.wrongconfig.com.
+			86400	NS	b.wrongconfig.com.
+			86400	RRSIG	NS 5 2 86400 (
+					20180326180310 20180224180310 46071 wrongconfig.com.
+					IOL9wmIn0eviMPPyIc5ODCV4NPmWBo3iHy68
+					P8+QE2lnMjtrJv7OLv/PJbXvUXI3mMp5eyFG
+					2ahP2MboVioJxwQSFrLQoNiBb6/jwjzhfD3J
+					A8kPwas7emCId7Vcd7Mq9Ber+vDZFgyyA+JY
+					2JeYvtXbzw4RzBLr3oPQiQ0fRWQ= )
+			86400	A	127.0.0.21
+			86400	RRSIG	A 5 2 86400 (
+					20180326180310 20180224180310 46071 wrongconfig.com.
+					kDPJR5VfmdY2S1wYw7bg6/omXEJPtgM5Sb5t
+					9Or8Bt1lYLrH+j1cxmLW/seZeHc43fA0kNtc
+					k3mWx//weCE3C44RPpLKrWcoPz9B3bnxUtE3
+					Bu1nOvRm+o3QntJBNDZ8U0rsfotKGvvyFM6W
+					vcXcmRrt2NZm/lBn9uDkO4oRYfo= )
+			86400	NSEC	a.wrongconfig.com. A NS SOA RRSIG NSEC DNSKEY
+			86400	RRSIG	NSEC 5 2 86400 (
+					20180326180310 20180224180310 46071 wrongconfig.com.
+					ObUABOfb/TCFm5RJGKt8ofxyRwV8Iz0FoLh8
+					T+L8H8ODx8xL18h7VeXL9SNH/OlkCkg29tiw
+					AE02d8RBCxjGRx23wrhaUTW4q77416CW5DOZ
+					ukNyZR7c9VoRFKbMAlG95glAuRQyEVwuhp8j
+					TyOOAKfjk41vy12UcsIR6U4fhcY= )
+			86400	DNSKEY	257 3 5 (
+					AwEAAclrcTWOnGUlwM0P1mNOBFVfW8kwJMBH
+					CYMtUd1RLC3fY/UUPO5eYXrUDgL8T2Yrcvih
+					3ChH9B+QBdOyjH5xBGfg8Gny6kVAuMmP8cqz
+					88rehCaL3MaKbm9wci9LRZVzGoK8i5nxKLP6
+					d7ZAHcvuXFkjqS7Sn9Zep59QUthvC46+TLz+
+					+BkqR0GzX6MVhY+xhotkjcux/U+r0OFUfBC0
+					eEOcviOXmyGGi5xR9me0Zy0cJkpzcHG+9EGx
+					HgpTl6IxFfIQgpgkEDb9dMK+wzbWqhH5Lq0W
+					TWyab8TLAc7IHaUUsKii/bMS+tH2tUegmdvn
+					k01Rn8HW6MnYobNYCtiIlhs=
+					) ; KSK; alg = RSASHA1 ; key id = 17449
+			86400	DNSKEY	256 3 5 (
+					AwEAAbfu9l44DH01RH8LUn2uNm/aiurknnMM
+					BiLMjkRzRxgEGqyxn2nVD85OQSZ41fy2l+Dh
+					1j8+Fll6fNIOjGgkAwYtGJ8yJiTpBHV2u93t
+					K33dSXI6kcPID6MCYV70tW2r+dMel1tTpZBb
+					l1gEVas5bjwLk0iFazB9t0WecByfzOSP
+					) ; ZSK; alg = RSASHA1 ; key id = 46071
+			86400	RRSIG	DNSKEY 5 2 86400 (
+					20180326180310 20180224180310 46071 wrongconfig.com.
+					MHK7x8rVBiJAJj8TkOwyxapcWbKMScf4Yuqu
+					32/XuBvA3OCIBhsJHKi7xTPgLpb15ScDmJfE
+					3NCh+HHj6sNgAaaEPLmokTr+iRcJbAaZe933
+					iZg91Ba7Y3Yo0yWS+mB1i0m7wqRzMxulgcU0
+					xEkuGPeB0I0+VseiPgq9GQHstP8= )
+			86400	RRSIG	DNSKEY 5 2 86400 (
+					20180326180310 20180224180310 17449 wrongconfig.com.
+					aw2/iDNfm21UHyTYQ0/e9N1b4jRGDL255ZJ8
+					El/mJjb3rJts7QUy45ZdgxHeu4dnEV6QMqPA
+					Dpavhn7C9cBSTVEz9pU4p3Jvbe5T+2Hhq+sg
+					iFNue78oNaqOkErm02z7tPkIXQeDuJ968Qeg
+					yYt6ACq9Gm8ENOcfzGB95tjtZo6XclRHr42n
+					te3uabgSGOx9vs3q8uc0LSLlmQLGoUhypw9h
+					/qYDDvA1GURCYOcxgASCzxY4qwC8CeeXXTdX
+					D/aX6sG4N6E5IhISLwnyHXjwMMJm2C+m0BnM
+					Kk6acNWffyDm1DmSI70bdQ+UU3TkiBB1Kdh3
+					zyDu7MqWeOgErtMJcg== )
+a.wrongconfig.com.	86400	IN A	127.0.0.21
+			86400	RRSIG	A 5 3 86400 (
+					20180326180310 20180224180310 46071 wrongconfig.com.
+					gv8D6Z53r60q0N5A9k/QI/pr8kq0ssmY0RXf
+					EGJc6F5TsyNB0yUcnJSF98NjgUVc/KF7XSnv
+					g0tNE5R00bCaTwudhNkYyzVPCuhAEfQEcRz4
+					p1CHVPM6CWo8QaBm7dou2IVJHuit5HyB/XrK
+					kio19KIpOY1fEuuwBwDx4smo52E= )
+			86400	NSEC	b.wrongconfig.com. A RRSIG NSEC
+			86400	RRSIG	NSEC 5 3 86400 (
+					20180326180310 20180224180310 46071 wrongconfig.com.
+					ZpOnlWwR4RYSQGGVC7sGCBce8uBFd/eWzmXE
+					/O3GXMwqKWcyfCjFjdN/FQSn8W4qqKpU5T59
+					uhcLAbsnITYJP8x4CRo44lRt6h/Tc9eKWAW7
+					Y62OqnAwdsDhrH3kzXipUeVGkP9SNEGDhKEt
+					tWv4+aPoZU+dGI2PaOD0pzYe7GY= )
+b.wrongconfig.com.	86400	IN A	127.0.0.21
+			86400	RRSIG	A 5 3 86400 (
+					20180326180310 20180224180310 46071 wrongconfig.com.
+					B4CdBLtDG3ose14jErBODdjEdcXwpjzQRe6j
+					Opel9bcVeIsopqLZO4Ly726mNRTr8P2YDgpV
+					NX+LVMb6J8uAHd5zDjnEVDhHMz4HWYDFwNiX
+					7Wl/09fA9jSTCu8TH7bnCrwaIR6bPTygMs1o
+					+xht3GMDu/TMiS7jZ9a07F04EtA= )
+			86400	NSEC	wrongconfig.com. A RRSIG NSEC
+			86400	RRSIG	NSEC 5 3 86400 (
+					20180326180310 20180224180310 46071 wrongconfig.com.
+					ioMlP0oFl1XkG5IJ4qHLewnHSm/tMCYNj7DV
+					FE8MnIBiF2IlYE2pt8q2SviAxBLyBq0RU1uC
+					Y9OwlUevN5+G/5h9ORQPRaW8IwT/eAVYmyMW
+					/UwJaZOM/2CH05MulZI06meHV0+j+YZ+To0v
+					c2o3V8Uf/RmOdcTwOnjFoForSUM= )

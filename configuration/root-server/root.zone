@@ -1,0 +1,30 @@
+@               IN      SOA     a. admin.a. (
+				199609203       ; Serial
+				28800   ; Refresh
+				7200    ; Retry
+				604800  ; Expire
+				86400)  ; Minimum TTL
+			NS      a.
+			NS      b.
+
+a.	A	127.0.0.1
+b.	A	127.0.0.1
+.	A	127.0.0.1
+
+; Delegated external zone with its own nameservers (and glue records)
+com.      IN        NS      a.com.
+com.      IN        NS      b.com.
+a.com.    IN        A       127.0.0.10
+b.com.    IN        A       127.0.0.10
+
+
+; Delegated external zone with its own nameservers (and glue records)
+cz.      IN      NS      a.cz.
+cz.      IN      NS      b.cz.
+a.cz.    IN      A       100.4.1.2
+b.cz.    IN      A       100.4.1.2
+
+$INCLUDE K.+005+20617.key
+$INCLUDE K.+005+39831.key
+com.			IN DS 23926 5 1 ED17C0DF773825921B9578075F851B9A754C81D6
+com.			IN DS 23926 5 2 8730EDD57CF47B709032998EEB11E087E751572E2DFFCE579FFB539C A2EDD043

@@ -1,0 +1,15 @@
+@               IN      SOA     a.wrongconfig.com. admin.wrongconfig.com. (
+                                199609203       ; Serial
+                                28800   ; Refresh
+                                7200    ; Retry
+                                604800  ; Expire
+                                86400)  ; Minimum TTL
+                        NS      a.wrongconfig.com.
+                        NS      b.wrongconfig.com.
+
+a.wrongconfig.com.	A	127.0.0.21
+b.wrongconfig.com.	A	127.0.0.21
+wrongconfig.com.        A	127.0.0.21
+
+$INCLUDE Kwrongconfig.com.+005+17449.key
+$INCLUDE Kwrongconfig.com.+005+46071.key

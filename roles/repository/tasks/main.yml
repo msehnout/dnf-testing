@@ -1,0 +1,13 @@
+---
+- name: Install packages necessary for running web server
+  dnf: name={{item}} state=installed
+  with_items:
+      - lighttpd
+      - nss-mdns
+# copy module does not work for some reason
+- name: Copy main config file for web server
+  raw: cp /vagrant/lighttpd/lighttpd.conf /etc/lighttpd/lighttpd.conf
+- name: Copy dirlisting config file for web server
+  raw: cp /vagrant/lighttpd/dirlisting.conf /etc/lighttpd/conf.d/
+- name: Start lighttpd
+  systemd: state=restarted name=lighttpd

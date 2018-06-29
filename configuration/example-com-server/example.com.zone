@@ -1,0 +1,20 @@
+@               IN      SOA     a.com. admin.a.com. (
+                                199609203       ; Serial
+                                28800   ; Refresh
+                                7200    ; Retry
+                                604800  ; Expire
+                                86400)  ; Minimum TTL
+                        NS      a.com.
+                        NS      b.com.
+
+a.example.com.	A	127.0.0.20
+b.example.com.	A	127.0.0.20
+example.com.    A	127.0.0.20
+
+$INCLUDE repomd
+
+$INCLUDE packager-gpg-key
+$INCLUDE revoked-gpg-key
+$INCLUDE repository-gpg-key
+$INCLUDE Kexample.com.+005+34305.key
+$INCLUDE Kexample.com.+005+47152.key

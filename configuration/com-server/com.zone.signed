@@ -1,0 +1,173 @@
+; File written on Sun Apr 22 12:32:08 2018
+; dnssec_signzone version 9.11.3-RedHat-9.11.3-4.fc27
+com.			86400	IN SOA	a.com. admin.a.com. (
+					199609204  ; serial
+					28800      ; refresh (8 hours)
+					7200       ; retry (2 hours)
+					604800     ; expire (1 week)
+					86400      ; minimum (1 day)
+					)
+			86400	RRSIG	SOA 5 1 86400 (
+					20180522093208 20180422093208 49098 com.
+					NTnitpLzQopAkLS5jkaXAubSgHN+UMItKUsQ
+					+m6JeCcN+bmgfyBwv91cTyIX/YFsMxSSgOfT
+					WV5/SFovaCgOd5fqxjfMOQCp+DcNf4PX+7jO
+					r1zUD/6b16OPU32puQS3qVe6639mQz4VcFdu
+					/M+WEcKlThGf2n2/e0qBMCJR/08= )
+			86400	NS	a.com.
+			86400	NS	b.com.
+			86400	RRSIG	NS 5 1 86400 (
+					20180522093208 20180422093208 49098 com.
+					T/1P4efeL2nRbR4MDJURvJXE9+8ZG+zDfuPT
+					pGnaboQNJ/z3uiliLA8BCE96L4VCj3bQ7FCt
+					cU4E0ytFACYSmfHUK5ZGBI7tR4o4+2bSQ8YI
+					lW5lVXOdBYZi52Hm381I8uadZa+rx2jn/Tjg
+					iMjwA6G2k8x1peFjQnPqZUJCw3Y= )
+			86400	A	127.0.0.10
+			86400	RRSIG	A 5 1 86400 (
+					20180522093208 20180422093208 49098 com.
+					lVF+yAgA0XT4FI/7s2w+bAXqt4OsX+tvJVrq
+					F1oudd+uTRpuQ6j/2fdvrjbaJNkrvgJBBaD/
+					4HksklRXRt04iuDilZL+8WLX3cWDt6PDOOTL
+					Gxkmpn2o9ddeiR/LY587uZXExZXXXzQGJ4cm
+					id0oAVSwoeDb7iXNIKyWxoEZ1t8= )
+			86400	NSEC	a.com. A NS SOA RRSIG NSEC DNSKEY
+			86400	RRSIG	NSEC 5 1 86400 (
+					20180522093208 20180422093208 49098 com.
+					Kcae1UKYxV2zvYRGvpzIOtZg1DdIIGqUQQgk
+					WFsQXVHV2bIEtNRviQqNsJlPBHu/rygGvwaO
+					cKfEfZPhOxeirrjfuejznKxzwCVuiZMimwWQ
+					H4S+ZCY1GAkq6M/F9e89xYD2XVXHl4KC/yV0
+					wLYHJWm8WfjyK03Fyw8ZR8UOXFU= )
+			86400	DNSKEY	257 3 5 (
+					AwEAAbI9duTOTr8YoYFO14iA2nI6MxjOsblJ
+					AZLcB3BnxwAxxS2BiRvEt5rcqkO7ANr39/1+
+					SAt8zjTfaC9ez2Rp6OT426lN1NEXFhfPmK8U
+					dFIeZ3/IdG1SottG/s1Ay/Dm0/oSAGgzSxru
+					8tHsIvnqvaZG20Wvl5W0DzlwA65EPzhYg0l3
+					EfrpHh+2DEIM3U6hGz8qAmNslnI5fftxjfgN
+					+5WpqDZSN6femj7gyMo8WfGIC37Yy58IPVfY
+					/+ncLVPmTYv2dFpXJ3OHSzhcjeOn/LfllF6R
+					EQBYFEHkL36dwh8p868/541jJvegDtHvcLM7
+					VzxoVSdTOKsnZaBeqS03md0=
+					) ; KSK; alg = RSASHA1 ; key id = 23926
+			86400	DNSKEY	256 3 5 (
+					AwEAAbJeV9PuRd7BbAxpk+IjXH/JaIcjLbg1
+					UaC0F6gkjK13BEYEuozAZBe8fpr+rAVWPu4f
+					Nya+Q2hqJIXJrotWTSNcof2UyX6+mIDQ83hm
+					rlnTiT6psy+fiMfRNxh+w/HDrcEN7CfJgcC1
+					+jx5/hv4He/JkHLgs2VA2A0+cTH3EymL
+					) ; ZSK; alg = RSASHA1 ; key id = 49098
+			86400	RRSIG	DNSKEY 5 1 86400 (
+					20180522093208 20180422093208 49098 com.
+					CaYdPQM1wUEP78To+68iKBNsSSZrEvpKlN3w
+					ERupKu42DVSpEGn8/7iS/dPAE3qmJtCIp+Ky
+					K8aFgc102KreChq3w5VH9xk75RZfPwhhlNqA
+					RV8VUpFJ3fpEX/RRAj4yzJnNvDAVzXr1o3fi
+					04HXV/ikSqe0SsJ/MJUrtdEkYEg= )
+			86400	RRSIG	DNSKEY 5 1 86400 (
+					20180522093208 20180422093208 23926 com.
+					VMmiHQw4m+tNuPIeVixXvTL/xC6eVqe3Nr2L
+					Snscv/dfl3Lou/yy8fj91ZJ6liYyIlqmrdnn
+					Mtbg8/GYFWCSTsHYiD0R7vytsBzh1YWiyMC7
+					L+SY5yjBwIgqil9z6gD0yFuqREhuTXE2Aeiw
+					jDLmNlmSjlVIzY+xTGXQm6Nh5GOxktA1U9dP
+					gIUvncYniBngTZ1KZ9dSnAz3aQ1L8YLkH+Ro
+					+mIWDD6ByOPEmAUA00VXfKPnUVSTUexPMEm7
+					xamROaO7n7upWZFZTM1RFceRJsDlt0Qd5aOk
+					cXZqAA+wINSkBILpMIS79NxqPYfux2kdmaZQ
+					f4rV07sBkA2ji8fK1w== )
+a.example.com.		86400	IN A	127.0.0.20
+b.example.com.		86400	IN A	127.0.0.20
+a.notsigned.com.	86400	IN A	127.0.0.22
+b.notsigned.com.	86400	IN A	127.0.0.22
+a.wrongconfig.com.	86400	IN A	127.0.0.21
+b.wrongconfig.com.	86400	IN A	127.0.0.21
+notsigned.com.		86400	IN NS	a.notsigned.com.
+			86400	IN NS	b.notsigned.com.
+			86400	NSEC	wrongconfig.com. NS RRSIG NSEC
+			86400	RRSIG	NSEC 5 2 86400 (
+					20180522093208 20180422093208 49098 com.
+					Z1LjW31Gd/LekxECH4CCu8khK1LZtGUAoJ/k
+					Sm8cs6oOfTJZ8sH4CgQ+KtLTjbnlhYcwI7/7
+					+HEhhdfDX3HnFhr/TQGNOcG5/llzslhbEzg/
+					7fPOZKjyHQz3m0DS/Gqw73N5pt9AmQAitnLE
+					bZ2h51SwtD4aiCJKU03TbzTEATY= )
+example.com.		86400	IN NS	a.example.com.
+			86400	IN NS	b.example.com.
+			86400	DS	47152 5 1 (
+					7EA5D6B1CE53932CFE24E01160139A981352
+					9BA4 )
+			86400	DS	47152 5 2 (
+					2047CD4DA60301240E15960508CBE1721EC5
+					F88F117DEC69FE3503C84D891B1C )
+			86400	RRSIG	DS 5 2 86400 (
+					20180522093208 20180422093208 49098 com.
+					ly6h5gDJq0/zcIOdwVApyRmPENYXe8AK/y+U
+					hqmUDrccyGKdNj2SyTfptFLgkMxz8kTeS0FH
+					JcMT11b/zW7DdzYwmfxliK0Axvma77ADIGLp
+					u1wB0OFtrMwAP/C2u1nKMGTwm14lNIw/fKrs
+					/mAxmXOzoXPUY1TXEw3ctHk4U+w= )
+			86400	NSEC	notsigned.com. NS DS RRSIG NSEC
+			86400	RRSIG	NSEC 5 2 86400 (
+					20180522093208 20180422093208 49098 com.
+					YfbiR+u9kh2kHjIuPyyw+bVyfIJ1t6tS+uPR
+					Krh/RA8Niuy6tk81Au14fztzunjLYU9P1o3m
+					kA4qvXGDC4ykaEVTXTStCtC0aUkPAu5I96Rp
+					bvCmjFWSLgf4DFYZ3QwTzD+ogFN8FmsDRgWw
+					vJhZbOPEenUYzuKmIdEXgY8fJX0= )
+wrongconfig.com.	86400	IN NS	a.wrongconfig.com.
+			86400	IN NS	b.wrongconfig.com.
+			86400	DS	17449 5 1 (
+					89192FA12DDE8E90FA1F81BB7D2650B31972
+					E423 )
+			86400	DS	17449 5 2 (
+					EA856D84168F66C81F9576A40AEFB260FDB0
+					A50B576B7CC5516E8AEF078894DB )
+			86400	RRSIG	DS 5 2 86400 (
+					20180522093208 20180422093208 49098 com.
+					WV+X0Q4xzGws7+qLH1MzJnY1gnAIUe8CH88M
+					kRtSkXPOOCulXQSq7e3QLYFSrESoV7JLMNVV
+					5OCYd+UsFAcR+do7mK67fy/nbvsnV4HPA2lm
+					UuI+u1GDbnT3xu4kTkwl8Vv0kIE8hmuliIf6
+					IQN78yzivriBQuO1p8DWwcr93y8= )
+			86400	NSEC	com. NS DS RRSIG NSEC
+			86400	RRSIG	NSEC 5 2 86400 (
+					20180522093208 20180422093208 49098 com.
+					a3zOYRHXrIvAVmPSGPWXy0JhBK9CZ4BnrUQC
+					1UpOFPQgz9h4YQREh6hveQpwp1S1zGEaY9Id
+					OdERNoA2eclUVzLVH6iJnXeQSJkLO59sYLc6
+					5ZSoKlvFc6kYv7YJTJMC/TkeSK7NNoWdRjEA
+					r6sSDabGWjwkgHSvwEZiWomSzgQ= )
+b.com.			86400	IN A	127.0.0.10
+			86400	RRSIG	A 5 2 86400 (
+					20180522093208 20180422093208 49098 com.
+					NunBux8cAl2Qjz8YC3qV9Ft43Cb0R1E2O7Nc
+					b0BjNq8kFR3na0+FzT9ixoP4DSI5S1GIhv82
+					bJ70l5s/k+hSQnK/LQ+C3J5AXPZkKBWVHeMH
+					qS9OaaGyL1JWvRaCRTC1FUpV7dQziWl1QUUQ
+					11b3ftyMr8gBB0Oj1YbV46XxScQ= )
+			86400	NSEC	example.com. A RRSIG NSEC
+			86400	RRSIG	NSEC 5 2 86400 (
+					20180522093208 20180422093208 49098 com.
+					kL8c1H9+i+xxQab0h4U+8pPF9hoiUKk/AboT
+					ReVlJwbQsNG51BhbHu7i8jNulIQ/KKfdexZM
+					h9kx6K62cCENIXURiQ0kqwQA9/giQv/lm5r0
+					wgGZikzTjmLJ3JXXepVrUV5uKdMGMP64PMfI
+					RW62dFRkPb9Gj6iAVMbJJl7Cg68= )
+a.com.			86400	IN A	127.0.0.10
+			86400	RRSIG	A 5 2 86400 (
+					20180522093208 20180422093208 49098 com.
+					b5uB5XgnCbzNwrnsSZyaw7fus0hvmQxgIECi
+					ruv/9FIbj2pBqgssH3ms7T4jGb8Njh24B1vG
+					+a7UPr3H2Tojwi+P8/9ta/imSKXKPUkT00NG
+					+DXpItviT+rCjuq6qa3cuF/pnVEMRnjdvqUK
+					j9CQ1WZWPqscB0FgxkzeA5bxaeg= )
+			86400	NSEC	b.com. A RRSIG NSEC
+			86400	RRSIG	NSEC 5 2 86400 (
+					20180522093208 20180422093208 49098 com.
+					KiQotpXfM4eFU4kxMFDdYhwRnigiTPgBhMtR
+					HKGSc/C1KyDVCu3llrSh67GCN2urF+aejeZb
+					6Bfm/ac9kELPWYHQhck2uZXfTvnJ/qQb9viV
+					yXrr7OPTIYmwBkPVsWbv+yZX1nu3jFDaV9e3
+					eQ4HX1u9Ho+aZiLTflYfUzqbzho= )

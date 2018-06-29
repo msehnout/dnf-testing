@@ -1,0 +1,4 @@
+[Service]
+Type=forking
+Environment=NAMEDCONF=/vagrant/resolver/named.conf
+ExecStart=/usr/sbin/named -u named -c ${NAMEDCONF} 

@@ -1,0 +1,9 @@
+venv
+.vagrant
+.idea
+
+*.retry
+
+keyring/trustdb.gpg
+src/lib/__pycache__/
+src/dnf/dnf/__pycache__/

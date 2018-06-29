@@ -1,0 +1,10 @@
+---
+- name: Run DNS servers
+  systemd: state=restarted name={{item}}
+  with_items:
+    - root-server
+    - com-server
+    - example-com-server
+    - wrongconfig-com-server
+    - notsigned-com-server
+    - resolver

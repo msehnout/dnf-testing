@@ -1,0 +1,36 @@
+---
+- name: Install list of packages
+  yum: name={{item}} state=installed
+  with_items:
+      - nc            # Debugging
+      - bind          # DNS server
+      - bind-utils    # DNS utilities like dig
+      - rng-tools     # To generate more entropy; needed for key generation
+      - git           # For development purposes
+      - tcpdump       # For debugging purposes
+      - psmisc        # For debugging purposes
+      - strace  
+      - vim           # For development purposes
+- name: Prepare RNG sources
+  shell: rngd -r /dev/urandom
+- name: Set global debug option for bind
+  shell: echo 'OPTIONS="-d 5"' >> /etc/sysconfig/named
+- name: Set ip forwarding on in /proc and do not reload the sysctl file
+  sysctl:
+      name: net.ipv4.ip_forward
+      value: 1
+      sysctl_set: yes
+- name: Turn off SELinux
+  shell: setenforce 0
+- name: Change file permissions
+  shell: chmod -R go+rwx /vagrant
+- name: Prepare network iface
+  shell: |
+    for ADDR in $(seq 2 99); do ip addr add 127.0.0.${ADDR} dev lo; done || exit 0
+    # - name: Disable firewall
+    #   firewalld:
+    #     zone: trusted
+    #     interface: ens3
+    #     immediate: true
+    #     permanent: true
+    #     state: enabled

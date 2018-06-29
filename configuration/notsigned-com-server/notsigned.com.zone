@@ -1,0 +1,14 @@
+@               IN      SOA     a.com. admin.a.com. (
+                                199609203       ; Serial
+                                28800   ; Refresh
+                                7200    ; Retry
+                                604800  ; Expire
+                                86400)  ; Minimum TTL
+                        NS      a.com.
+                        NS      b.com.
+
+a.notsigned.com.	A	127.0.0.22
+b.notsigned.com.	A	127.0.0.22
+notsigned.com.    	A	127.0.0.22
+
+$INCLUDE joe-gpg-key

@@ -1,0 +1,9 @@
+---
+- hosts: all #vm
+  gather_facts: false
+  become_user: root
+  become: yes
+  roles:
+      - centos
+      - dns
+      - repository

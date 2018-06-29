@@ -1,0 +1,37 @@
+@               IN      SOA     a.com. admin.a.com. (
+                                199609203       ; Serial
+                                28800   ; Refresh
+                                7200    ; Retry
+                                604800  ; Expire
+                                86400)  ; Minimum TTL
+                        NS      a.com.
+                        NS      b.com.
+
+a.com.	A	127.0.0.10
+b.com.	A	127.0.0.10
+com.    A	127.0.0.10
+
+; Delegated external zone with its own nameservers (and glue records)
+example.com.      IN      NS      a.example.com.
+example.com.      IN      NS      b.example.com.
+a.example.com.    IN      A       127.0.0.20
+b.example.com.    IN      A       127.0.0.20
+
+wrongconfig.com.      IN      NS      a.wrongconfig.com.
+wrongconfig.com.      IN      NS      b.wrongconfig.com.
+a.wrongconfig.com.    IN      A       127.0.0.21
+b.wrongconfig.com.    IN      A       127.0.0.21
+
+notsigned.com.      IN      NS      a.notsigned.com.
+notsigned.com.      IN      NS      b.notsigned.com.
+a.notsigned.com.    IN      A       127.0.0.22
+b.notsigned.com.    IN      A       127.0.0.22
+
+$INCLUDE Kcom.+005+23926.key
+$INCLUDE Kcom.+005+49098.key
+
+example.com.		IN DS 47152 5 1 7EA5D6B1CE53932CFE24E01160139A9813529BA4
+example.com.		IN DS 47152 5 2 2047CD4DA60301240E15960508CBE1721EC5F88F117DEC69FE3503C8 4D891B1C
+
+wrongconfig.com.	IN DS 17449 5 1 89192FA12DDE8E90FA1F81BB7D2650B31972E423
+wrongconfig.com.	IN DS 17449 5 2 EA856D84168F66C81F9576A40AEFB260FDB0A50B576B7CC5516E8AEF 078894DB

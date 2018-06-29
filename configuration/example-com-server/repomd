@@ -1,0 +1,7 @@
+; b6359151f847834a2dd3dbcd20e631393826ba90999b40ce8c00afd54daf2b35 <- digest
+; {"alg": "sha256", "hash": "b6359151f847834a2dd3dbcd20e631393826ba90999b40ce8c00afd54daf2b35", "ts": "24/03/2018", "val": "9d"}
+$ORIGIN repomd.example.com.
+@ IN TXT alg=sha256
+@ IN TXT hash=b6359151f847834a2dd3dbcd20e631393826ba90999b40ce8c00afd54daf2b35
+@ IN TXT ts=24/03/2018
+@ IN TXT val=9d
