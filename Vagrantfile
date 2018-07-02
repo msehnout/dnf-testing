@@ -54,6 +54,7 @@ Vagrant.configure("2") do |config|
 
     client.vm.synced_folder "src", "/src", type: "rsync"
     client.vm.synced_folder "configuration/local-repo", "/vagrant/local-repo", type: "rsync"
+    client.vm.synced_folder "tests", "/tests", type: "rsync"
     client.vm.provision :ansible do |ansible|
       ansible.playbook = "playbook-client.yml"
     end
