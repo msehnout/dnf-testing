@@ -7,7 +7,9 @@ Vagrant.configure("2") do |config|
   # breakage during frequent updates. HTTP server is using lighttpd server, DNS
   # is running Bind for all of the servers.
   config.vm.define "server" do |server|
-    server.vm.box = "centos/7"
+    server.vm.box = "fedora/28-cloud-base"
+    server.vm.box_version = "20180425"
+    #server.vm.box = "centos/7"
     server.vm.hostname = "server"
     server.vm.network "private_network", ip: "192.168.99.100"
     server.vm.network "private_network", ip: "192.168.99.101"

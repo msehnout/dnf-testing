@@ -1,0 +1,13 @@
+$ORIGIN .
+example.com		86400	IN DNSKEY 257 3 5 (
+					AwEAAbRvoXHnaTV9n71wb5B84MGwd205rlwd
+					R0j17PX86qHOB1XXf/g68jITs4/myqEWi3IL
+					thjIZTxq8Ig5Qm70zOAb+oMlSCAUMU0+6xnV
+					7E9eiKidScCEHfPpweJs0bIOEjUPpbeyd6fg
+					9OSPb8QRwYBsD8+dZdG3fqtlAX8x8TY4+Wxn
+					/lM5EDW2yMp8MC2FvlySxD335mTQUwn3kFFL
+					4Q1IkgBz20o/ZvSyVjsfxznqnyarETYP7XPq
+					63Nbv9yMdwENRG2kLgaslF4CZJHW7DJ5YEmy
+					pJ1M8LAtJmxBYBQAb7ZUKUBa3+K8nSIv5FT5
+					HlP2dHDXT0FHYYwhsbI3tBk=
+					) ; KSK; alg = RSASHA1 ; key id = 47152

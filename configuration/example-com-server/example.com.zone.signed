@@ -1,5 +1,5 @@
-; File written on Fri Jun 29 12:41:54 2018
-; dnssec_signzone version 9.11.3-RedHat-9.11.3-6.fc28
+; File written on Mon Jul  2 08:46:22 2018
+; dnssec_signzone version 9.11.3-RedHat-9.11.3-12.fc28
 example.com.		86400	IN SOA	a.com. admin.a.com. (
 					199609204  ; serial
 					28800      ; refresh (8 hours)
@@ -8,37 +8,37 @@ example.com.		86400	IN SOA	a.com. admin.a.com. (
 					86400      ; minimum (1 day)
 					)
 			86400	RRSIG	SOA 5 2 86400 (
-					20180729094154 20180629094154 34305 example.com.
-					bUNR8v8PAxU+rd6AoMj77WklRH/is4p5NybJ
-					gjATS1Yc0k65cTUp8HmFBJy2vk2GEWxIIq6i
-					GxbR/0o4VrOh3AYrJjV45/Xzr+MKJriZjS9O
-					EcRAl8dYAXX3u6uUq6zGmyN//ZzMMI+kC5/v
-					t6h5/14jUIk6RTr2eBzLDA0D03Y= )
+					20180801054622 20180702054622 34305 example.com.
+					eRIUmRE5X602ODl78VE2BgLLITqyew3xgNkw
+					Ln1Z37GQaGTfVeiQmvAAplwkBAajPJaKxLmS
+					iudnOEb5fLC6EsLMKlvqSMt2hsjvJfMtdgmF
+					EY7Yh2WqHw45i4x2yhWC/+jnOPIzprwA/Nb9
+					JzXK7HKYoXAJXKavhsuiBwh54tU= )
 			86400	NS	a.com.
 			86400	NS	b.com.
 			86400	RRSIG	NS 5 2 86400 (
-					20180729094154 20180629094154 34305 example.com.
-					CeVVZVnDm7TUNeEdZOCYdXDNz9RmtT+CawbJ
-					2yHIeESB7nlIC38UtwND6SE8lINaxDpSruX0
-					IqvzdTGPc4nWg9KM4dO3+c+tR6HjyF0HC2iD
-					rvmHtkvmh4JZSBeOQ1ZZ1pSEHBF2n+vxQ21v
-					sCC4u6sGsxlgYkHgrXG5Vu0Y8UA= )
+					20180801054622 20180702054622 34305 example.com.
+					V+JvxUtzXkBPkmbQ+3FvCUIcHsyRI9NVnb/5
+					TjQxHOspzh5FNkfx0Mf69lnnpwgwgh55gFt3
+					8s2WLJnbWxfUttrWkQWQWtjhdBLn18WElH2D
+					7BqeV+lY7sUA4fW0yZqrgUHDLu2yQGbSMEIO
+					CMS8GvmHSay0PN7Fd+KkWt8BMWo= )
 			86400	A	192.168.99.120
 			86400	RRSIG	A 5 2 86400 (
-					20180729094154 20180629094154 34305 example.com.
-					lcH5B4nqJC4wAttOT5sGVk1cwsqCniuFlMa2
-					HaLFD0BcSa22uT8oMk0xZBBqCpHvwo/nDcLx
-					6b3F7ZBJqLGG3tRUQ9k9+9VNabHyVcRBew1y
-					Du8hp78QP3hK5oXY3zcnHQLddL5hm4vV6FTS
-					2v8EwYmHuVDwdswcIp3HtYB7Hvw= )
+					20180801054622 20180702054622 34305 example.com.
+					j7UP+UB8YwaygpAxIYsLznSKVaQjWSaG0IrU
+					u+6S3OfGlHT+F5GLZI/XV/WjlUD8EHmet2Ys
+					aDWkyiLA82RerErTfaElMfrBQEIHobuOXdfZ
+					MmRboVDO/hxk1nFTDj+t04mD54UVWyPjLNmM
+					fnf+K8sVRzEhbuAqOUzdrZYHaFc= )
 			86400	NSEC	4bb47f186df233e48b09d241ee4defb821add0c35ac8311469fe1522._openpgpkey.example.com. A NS SOA RRSIG NSEC DNSKEY
 			86400	RRSIG	NSEC 5 2 86400 (
-					20180729094154 20180629094154 34305 example.com.
-					quEc9IKU0liqmu7TRVTSkVIFoptLUxVRppjH
-					ggmtbLZoIwRiPNHkm9z+Sk9Qi+rZtQggQybP
-					xjC0Vxwu4rSq3tCHoa64ZAcrFNvfDlZVz1uQ
-					BUcEN8KqHnwa44a5oHwA01/nOxGvICEkGsyO
-					HFjGkKSZHZjs+cUYjpc0o2OKFT4= )
+					20180801054622 20180702054622 34305 example.com.
+					jha7LBD1WxZnukPtTRZAC25/vHJ51GIpvNej
+					Qio9ekxgN6CvRla+9j8huRW56a88YXHDjjpw
+					xZ+2fqBykA7WenJPPeQy7jLQX/+eKk6lzbuf
+					OPQQnfFomxm85bLN5K5y4FlKXL1xAGyHdgBA
+					wJ0er5YOnPjiZa2YvLLhXw5yX7k= )
 			86400	DNSKEY	256 3 5 (
 					AwEAAddoCmXrS3t0km2O4DFc8ZU8uEjF+w/M
 					uvKt7r7I7mp+zAFFyk4pzjvmIUcJ4442uNJO
@@ -59,51 +59,32 @@ example.com.		86400	IN SOA	a.com. admin.a.com. (
 					HlP2dHDXT0FHYYwhsbI3tBk=
 					) ; KSK; alg = RSASHA1 ; key id = 47152
 			86400	RRSIG	DNSKEY 5 2 86400 (
-					20180729094154 20180629094154 34305 example.com.
-					yWX/Zl7L9ZuruJzuA094Kmo3spiwlfkPomJt
-					EwGNnAhlC4+WlzZCFynDhP6pHD631DEwVgr/
-					V4zKsyc+ugzsPkvGgeMepJgqBtNxgv6CoIs/
-					dG8PIq7rht5wREp0EC/pfPgj/nFs4hsNmJFU
-					/gnXKklsh+45VCU4P1S9UJ7M0+U= )
+					20180801054622 20180702054622 34305 example.com.
+					wrdcY90mH0+k5433bUe3HSJeUd1chsuDJ0Om
+					weWqJb1LyUdznMI0Djky5FcxaHxmc6gI+fWZ
+					ocTtXmqA/WESShRbTGbcozLHTqT2XWDkVI6d
+					kj/XOikZpqnx0n/+/uyRYCiXPXN7+RnCOkfU
+					yQqcHKzidLQ1bXCjTWrDnXUpQ8E= )
 			86400	RRSIG	DNSKEY 5 2 86400 (
-					20180729094154 20180629094154 47152 example.com.
-					W7Vv6w2e6CFK0hKPh4m5MOECZOmJuH3PtAeM
-					OpgnF+fzxycBMv13miEJ0yahSxnfMbUZXYUF
-					fGsFonOt5dDYaKRAGpFVEQugTEw5dEhkjXvI
-					EtU8HhPi21Hpp9wCb0ExaPcSguuQ+gJUdjfP
-					DLXM+OX09owsbaoe75aiXO9ogAVaTRzfhIdy
-					bctJ/MQwOpjmrLjjyp0jK4e7UxL0bePj6KEx
-					Y7nAyQV/1qYPGcsan2kX43Y5Xam3Yq2FVAEL
-					PfHFV7RsLb+LgdZof4b/ZC2Y+mSP4D/BEgFa
-					YB4v0BJDJSxtFimRKtIXWK+XxY0RsgoP7hy+
-					Oed//XDotNKZQf+LKQ== )
-repomd.example.com.	86400	IN TXT	"alg=sha256"
-			86400	IN TXT	"hash=b6359151f847834a2dd3dbcd20e631393826ba90999b40ce8c00afd54daf2b35"
-			86400	IN TXT	"ts=24/03/2018"
-			86400	IN TXT	"val=9d"
-			86400	RRSIG	TXT 5 3 86400 (
-					20180729094154 20180629094154 34305 example.com.
-					P+n2pZDUufO5GR/MaNgOmeMun1CT6xViZlWe
-					1fch7mgJAYX4svtyg8N/TTYlXyng+7YIq51z
-					OspNdwyuFm2ZdSiulv/uTLVQeRONUbHswkyw
-					ri66Zr8Bx6j8TkCO57S727G/WLozLstVDETs
-					wdhsuH8fbgR+Ps5qoeTNikYfMAA= )
-			86400	NSEC	example.com. TXT RRSIG NSEC
-			86400	RRSIG	NSEC 5 3 86400 (
-					20180729094154 20180629094154 34305 example.com.
-					p1MI+5MZ3XmJbX9oNXkC9nN2hFTVeEb8Cyto
-					DEU1Hq86SlAl2g4d50m5PympbmN7BjtUu8Bd
-					cRKnZjlXVt93HsSZ/jb5NmKlJOR77ANwWGo9
-					ohCeEAnzxY+UU9AsWgcjd3NYspr3xMB8nWF+
-					HCAFwlvKl5/1QnDjzv4oe2NwGaA= )
+					20180801054622 20180702054622 47152 example.com.
+					aZUIXhSbUCqr0hhZQy1+A0/ENL7heUIK/vG9
+					GANWwftFFDxs6xVU1PlUXyLJlsUb063EtTgU
+					7Hi4cFlIIATitJD06oTG/3rcfAPfldH95uPW
+					tXWimek5yfJgNZDyqdRZZncA0rzzYLQd+c2o
+					PXE9uiSJN4nwV13QywPjHgy2HTLIQbNAsAgf
+					1i1kMUD3ndbEWoEwFDCUY7naI4O40cp3Y99I
+					XzYfgXoM57drEqqtI7nKaXMC3D6ZnJDoCzAr
+					/3wAPjBE92TKvZOnbmbGWRe0d5YmC3Kxxl5A
+					Gmy0xtB0E118sXs2koeS4+r32ojZDH8pQ+n9
+					bkEBbYgFwInsJqCLfw== )
 4bb47f186df233e48b09d241ee4defb821add0c35ac8311469fe1522._openpgpkey.example.com. 86400	IN NSEC	d6fb116e0485a16e447de0c6317eb48e6ce1370e7986400f95ebad00._openpgpkey.example.com. RRSIG NSEC OPENPGPKEY
 			86400	RRSIG	NSEC 5 4 86400 (
-					20180729094154 20180629094154 34305 example.com.
-					VaVX+nsjrLbcq6AH1h05MSzUBIirbzNO+Moq
-					PMbMnh3AKC5puJ9NUqPY/WHVZORv1//Gh+FZ
-					c1UubxkU8DUDDPrhDLm3sojCnRL+FNGeHbKh
-					APiwQU52KFoTKB5ubuhF2Aa2gt9JVc7eDRrD
-					3n3pO//In24k1Dm1lQwvWnMMEUM= )
+					20180801054622 20180702054622 34305 example.com.
+					bSztr+u7GPI4Vtthzw2Xsd4vU5CUWzmA/MuY
+					Eu7rj2lajpcu/v5Btfbpn/KYXY58rCq7ei05
+					YqE4GMU8pecq/bjk9BldDivaOheN/vFU1dZY
+					3ypRKKQSD2wNW+IWE82PYgyX+OSWMlahLJlv
+					nU+r575Ko+8Jpys9dq+/zz3r5aw= )
 			86400	OPENPGPKEY ( mQENBFqW0pIBCADJo86QxNnPB5is5qZEz6U0
 					27T3vcf4OopgLjlAdxsCLtXcvXGbNWvQ4H+0
 					INrO1c1spyG3MxGI7hFyrgp2180MOW7jAasX
@@ -152,114 +133,55 @@ repomd.example.com.	86400	IN TXT	"alg=sha256"
 					6XGiXa++wImvCxMzAs3BhhnSghjz36ErCiYT
 					Iw8qqKKTQztsb7II2rzgU6IhAw== )
 			86400	RRSIG	OPENPGPKEY 5 4 86400 (
-					20180729094154 20180629094154 34305 example.com.
-					dPzn1fXiBNm+FcBJcUq+xjUhHEZ5xYnQHcpt
-					1LJ0T30D7ZfIrPi7MYRstAf1ZOBUUUd5qR3m
-					00wn8WlXju7YFLDLeYryWbLO4VI0Q7OvDDrZ
-					9lw93DyljYng3o/7+X36KCwFIC787ytSV5pC
-					+fMdTW8lsNrGVB7JKlTgUAfTW8g= )
-d6fb116e0485a16e447de0c6317eb48e6ce1370e7986400f95ebad00._openpgpkey.example.com. 86400	IN NSEC	e2885f2bbe3d7a8b08e328b9abf1e0824bebad97625b300e24649a25._openpgpkey.example.com. RRSIG NSEC OPENPGPKEY
-			86400	RRSIG	NSEC 5 4 86400 (
-					20180729094154 20180629094154 34305 example.com.
-					H5//EpYLKtcdS4gxTzY/duP1Hx7Ofi9AhVH2
-					bg7xQXS9iCL1lIPsK/wRCsBNTRDt2BOf2jUx
-					Bj06gAqUX9oREGQnnuDz5e1aMaAMMfez4BHg
-					MPTkfVnZBb1YDfKULraKSgFd7p8xdfPoF1K5
-					nKCmvTG/O2Z4D+vKv0a+MIqPEUM= )
-			86400	OPENPGPKEY ( mQENBFqWzewBCADMHY8wL2Gm+aeShboOfG96
-					/h/OJ8FHj+xrihPGY34FwLVqtvO+lRIO6t3w
-					5y7O1MWzR1ePtQg1T1sg1s9UeoDRMZoVgzZd
-					RXtQH1Jy9xpTeMfL31mlc3wOnitcH0AdWhT7
-					xnnlaCeJuMrX82PWtiJNd+Cy+bgyLfLMwX18
-					cimwYCnyIHQ54qiiywXa1paVHkbEJdbd8f4A
-					xArsHX33xCv76wct2uXiHYAHu67rE5FhQ0mE
-					qfIZHwuFljGPj5UMgyd6MRMuL2Ho1hL7FDPI
-					xDBv5tMWeZJszixIsCkA9Kc1ibylDz9Ix/ke
-					H1K9XXSb/o2EIfF6sWYcj0wNvJllIHAfABEB
-					AAG0QlJQTSBQYWNrYWdlciAoVGhlIGd1eSB3
-					aG8gY3JlYXRlcyBwYWNrYWdlcykgPHBhY2th
-					Z2VyQGV4YW1wbGUuY29tPokBTgQTAQgAOBYh
-					BMwU+9636QKkbYsjdMKSn1VZ4I5DBQJals3s
-					AhsDBQsJCAcCBhUKCQgLAgQWAgMBAh4BAheA
-					AAoJEMKSn1VZ4I5D6icH/2GY2MMnmcDO+ApI
-					F6gGg9itzAHLTNcxEMl9ht1Gu3JQ/VdsvMQ6
-					lG+U8yffEmsfQebtt1UaMVXzyt0tcSOBJvVE
-					I6qc6skvfea3hqL4srtTOCwu7ZBA9gOE+eB5
-					BWBspFUVIwUO1GKT48uzV6CaODLitaxc7NrJ
-					9HYw4C4+ICCfbIJhjM/HqxLKOqVy/jsySqIH
-					K96RrjY/m8Q9Bzsi/6fj/GHkewaM8zaeNLHE
-					7MgXFZAuJ8lzjD0r2oBDJGeBKfjjz9xh26YW
-					jG/AoiolXfliTEox6p0bf820eRhdX9UdSesB
-					ROL3rkB+hM5FOT8crSPJsuGZWJ9brikfsurW
-					yU+5AQ0EWpbN7AEIAK0/PThuvsLdDGe5HeZn
-					3VdrFcD9QSOV9Xjos8zWkwx8v0t4KXPM4Gsh
-					yU2ddNjgA+00LhzjACm2ropT5vdvKPtf8lRG
-					OcWWHkiMPdDW/R3/I5S0Oh1WFNrQZwQSXn/D
-					oPnhUZNGErpZlUzF00BEltwoVWgT1n81Bp48
-					6U3oziZnUM8kxXXY2PN8aTfWjsxOSmjyu2m7
-					abeyjTqX9s++vUCQhmCNboSY1AhXF8GQl1Ce
-					mpHVv0hOuC6BeadZRXEfEF0sQogswXpFhYG4
-					GFUvVzKBn00/5phNWHvff1GDjzZzmVcRPje+
-					rH6gGP8tpQn7NL1SvrazSqSOih//FfV73EMA
-					EQEAAYkBNgQYAQgAIBYhBMwU+9636QKkbYsj
-					dMKSn1VZ4I5DBQJals3sAhsMAAoJEMKSn1VZ
-					4I5DshgIALSnLy7KL0bcqxoiEZT+P9O+gX34
-					J2NEfITlu3MZyN26LbyJS7HuN1vmuUc/UM0f
-					f7AW6eElCNFr5HQOrFELUZWiX7f4U8ihRN39
-					g1PKRGANlUcLm1Z/JnKyYbyzRK70o5A35EiX
-					EHwY62c/b8I1N4kzNKpa0eQcJ7F8XoZhau0U
-					sxqueVPeEIaHX+fjbalz67eaiFTu8MurdGKn
-					tVE1dOPYbGvZE0+HxfDOoVo05bRUH8By7dDg
-					VaI9EijrVzjA5jHPJxNIj9AQP9W8zst3l3d9
-					v8o0Pw+L4cWzv+aBFakfjKGugs6lA53fB3RC
-					fZ7OrMwCBvlTfDigK9X50K6XoP0= )
-			86400	RRSIG	OPENPGPKEY 5 4 86400 (
-					20180729094154 20180629094154 34305 example.com.
-					Uv1zA2Z0GGWl3kwBraMGp5bJ+Gb1diWSaUjh
-					FIhly1uoYUJORPZZfzhI7QhvlpdpufYG/ZIl
-					qaxIFYQHi5uxgzO1kLNfIkYA3jjNFLIjkVy5
-					X3niQia2cGdX1RhGyWdqm19jiPgUxtoycZGW
-					SQ1+IF/SKvnH8YpJktAgspFEi5c= )
-b.example.com.		86400	IN A	192.168.99.120
-			86400	RRSIG	A 5 3 86400 (
-					20180729094154 20180629094154 34305 example.com.
-					EMhuP97woeCeUOVvbgXLGCv8LRkjVgg4qIPP
-					sHcrgd2QW7c+Ze9li0UYYtMGb9ZBv6gB8V9P
-					3+6qPtvFk7BFzU5F5+MxGrIPyPltPN6YuJpQ
-					m6xBvuMv6lbxQZm7WHzxmMaLJ2Kx3/pLbfgy
-					Lv63l3nhyWd2gMDLe39SnKgVQvI= )
-			86400	NSEC	repomd.example.com. A RRSIG NSEC
+					20180801054622 20180702054622 34305 example.com.
+					mu14ojEqMCkx6V0bxZp43Eh348afXr7AZEmi
+					VXySrbKs3WvHFdZjI8XZ/9Ux0lrlRRjRKApq
+					Mmn6m1CDqB605m38H+k9guGD4ZTQlftyiXD6
+					f5MBUMDDxc9BPbjjvD5Pvou+AawnPknCMGkW
+					jlXCxVFk+4zMgkfp7mYfa5TWvtc= )
+repomd.example.com.	86400	IN TXT	"alg=sha256"
+			86400	IN TXT	"hash=b6359151f847834a2dd3dbcd20e631393826ba90999b40ce8c00afd54daf2b35"
+			86400	IN TXT	"ts=24/03/2018"
+			86400	IN TXT	"val=9d"
+			86400	RRSIG	TXT 5 3 86400 (
+					20180801054622 20180702054622 34305 example.com.
+					XVeO9Oy3epNpXLhESH3Wbt8TcG9BSlGv9kpK
+					9JmCJ6C38v2M+Gp2s0eHBQkvmIdM+fMb5nAr
+					viRYofDMKyRR0UR9+N44g0wqllSO5v8MA7vn
+					dV/zHeXi5VJt/kb7XVz75ghZubKxwocUmrek
+					cS68MHN1Bs6o+/2pCsdadVTuBvM= )
+			86400	NSEC	example.com. TXT RRSIG NSEC
 			86400	RRSIG	NSEC 5 3 86400 (
-					20180729094154 20180629094154 34305 example.com.
-					esWk0HqEdA5UXyUJrPZiMsKv+LKAOZgy05Wq
-					gZrRhpBqoD06/wWUQlx01wuhOS4F6Tm+CQGu
-					4GQd+kPcvExRJOq70b7XqHUN5lfWgTYbn56r
-					LrXYoHJdPWn3HzD6WULamz3SPSrY6kkCElIm
-					9XlsPUtVgjBHKTZMjGTM5DSTTv8= )
+					20180801054622 20180702054622 34305 example.com.
+					G4UI8V0dbhCPmThxMWydUVmAi/TbQNQUW3Xo
+					NK0+FmqIeVz41d5phu1OYhLCnCp9C9wh/a4X
+					33YJZGBkBwPltc/RYGNBEJhKkdnKDdf5c5t7
+					zNf/NfT9qkjmNE4xph2rcUV6I3Bg+rwctB0z
+					/9ZDs/xrBmo73grsU1ZgcLJlcjk= )
 a.example.com.		86400	IN A	192.168.99.120
 			86400	RRSIG	A 5 3 86400 (
-					20180729094154 20180629094154 34305 example.com.
-					HbPWGUu/K8Lf3asqWIVM7RB88MPRIwseqy/B
-					bOW+64azqL+EOrRhtcQKiZETRNIi+DRxsXIv
-					q+PloZhEw+O59I3FnYwA7nskfeF1qROOM41Q
-					z9GWIz2uCwcqVtUhNnSPw9wfmur9lKiBJT+Q
-					2YaKFenOmkZs1Z2p3A8cTAF/O/U= )
+					20180801054622 20180702054622 34305 example.com.
+					HvMRXndUPgvXbn3n3RuETFc9HuTDIHMxKyUG
+					u+8Y5xxOUIcfp33ZEISSmkWyeLtFMOoi9Kmx
+					+5YZ2d5tvzui1DxLm0TtmwantvmT6NXwsWW0
+					9kqB9nF8WH55ySmig2/7rMB3bEqm9kcP+sDN
+					/4/M87vBHbcssLdK61Dpl3J3icM= )
 			86400	NSEC	b.example.com. A RRSIG NSEC
 			86400	RRSIG	NSEC 5 3 86400 (
-					20180729094154 20180629094154 34305 example.com.
-					rWB5eBPPUj3EI3LVeZmxrD9IoWk0h1mkYtfL
-					J7yJrk8Cc0maYIckUquKMNH4UvpkXwj+ztMR
-					2JjdHH03hKskp+NwNy57ILejN+xp9nvrkTCZ
-					mmLBTBmRfw/HhBBZ0NCwO6pB2ZAD5W1w/la8
-					Nn05SARwSoRQk2G3jz8rNLIcpgA= )
+					20180801054622 20180702054622 34305 example.com.
+					Z3CGr6AX4p0keppU3ns6Pu7fKDiC4XLpBB5g
+					x1Q0y1vt/gwUgwei2OgEOGoTFXdDIxtINdUZ
+					t1EiMlXj0lnw5yCiJ81JrQAbB2JDmhb8qFf6
+					agHDlv7LdnB3L11ztM3+1lsbyoerjp5pzSlE
+					LOGbSxjHp89N20vey8BgbLGNOss= )
 e2885f2bbe3d7a8b08e328b9abf1e0824bebad97625b300e24649a25._openpgpkey.example.com. 86400	IN NSEC	a.example.com. RRSIG NSEC OPENPGPKEY
 			86400	RRSIG	NSEC 5 4 86400 (
-					20180729094154 20180629094154 34305 example.com.
-					ZaoPbRtZ2KnRX6E0kw29kjuhnniQdjXae1Xo
-					+e/CDUWsfF3Ix5c+jP2B3/FCRYbv8qAGtEKG
-					EPJ6hDSqyXD2n0tpr7Ck2BM5ObHALOMKG8lY
-					CpL8hvR6Zug2yIaJ4FCcgc0IO07LuRSau1Nr
-					vShFLk6+6Fg6U05x3Ay1R7Ub+Ok= )
+					20180801054622 20180702054622 34305 example.com.
+					lOyq/4EnMORluE4aKAAPZ0BcSgOG55+2/kXa
+					D9ToXbiEyBxKR1HAVnr8eiBj33gVf6TdHHcG
+					m6yzDiN0XgmdPerWviPDbzB9UfQDchqQkW2x
+					zlrVOu9dbkxIyOnhyb5ru5q1h35goKBhEdVC
+					7ZQmbR0mkO4jXqFYGGFxvGCGvPA= )
 			86400	OPENPGPKEY ( mQENBFq2NWwBCAC2kV0KzofmLwAjEGt/tTjX
 					9LosPzQh5QnHAHYyIVdI+87IZ2cUPVzN2c4x
 					oKKyfcerXlaYLqqQHtk5NKfvewISw7a1qGdX
@@ -308,9 +230,87 @@ e2885f2bbe3d7a8b08e328b9abf1e0824bebad97625b300e24649a25._openpgpkey.example.com
 					M1wK+5Thk3af3WxeZ1s7uzu/swbh2cx/5eDT
 					nmbP8EIX36Wh/2LE )
 			86400	RRSIG	OPENPGPKEY 5 4 86400 (
-					20180729094154 20180629094154 34305 example.com.
-					Vrp85prLQArYQ6iiUQ2ilAnYBuqfPvMjGa5u
-					pvXa9LeduEnUuZhsORHT/peYg7kh3ELI3EAX
-					5fbmuDTAdqfCyj8qWqDGnBG9nEGrwW3sdhQw
-					o/sJtVvN9zrLWGopHgeZ1EGtGUX/gIj6u7Ix
-					RanCWHQxRvPx6/VWjTa9CIVi6s4= )
+					20180801054622 20180702054622 34305 example.com.
+					sookXA7u9I8lBRA7J6bMt0EKdBPiQ4HZ+E9c
+					DbpgJjH9b4EogUb40fq1I4MtmR6A0gIOopW4
+					H22n4xMGooDJyqcFk+0TyvB+v0noju2MC8Fg
+					3WVNZp3nQhgUJqu+FLPV7f35gs80K5qrpBBn
+					rtpSIBvyt67b2bCqMWHr9QGDYSc= )
+d6fb116e0485a16e447de0c6317eb48e6ce1370e7986400f95ebad00._openpgpkey.example.com. 86400	IN NSEC	e2885f2bbe3d7a8b08e328b9abf1e0824bebad97625b300e24649a25._openpgpkey.example.com. RRSIG NSEC OPENPGPKEY
+			86400	RRSIG	NSEC 5 4 86400 (
+					20180801054622 20180702054622 34305 example.com.
+					1E6JFMD/BYv5ixm40R7wiN5tLoMbWs3Zs6t2
+					QbWHieHgTraJrEjsR+w4lFV4NH1ZZQsCq0Zn
+					ANCwPEgz9iyQ6HWXbUKGPZF3dr1UTg5YQy1u
+					V1CicEHo74OFRGPgOhvnwX/MgCUNMTDX6zQ2
+					vgxvsAQztwclhs6D7lQucSbwqlg= )
+			86400	OPENPGPKEY ( mQENBFqWzewBCADMHY8wL2Gm+aeShboOfG96
+					/h/OJ8FHj+xrihPGY34FwLVqtvO+lRIO6t3w
+					5y7O1MWzR1ePtQg1T1sg1s9UeoDRMZoVgzZd
+					RXtQH1Jy9xpTeMfL31mlc3wOnitcH0AdWhT7
+					xnnlaCeJuMrX82PWtiJNd+Cy+bgyLfLMwX18
+					cimwYCnyIHQ54qiiywXa1paVHkbEJdbd8f4A
+					xArsHX33xCv76wct2uXiHYAHu67rE5FhQ0mE
+					qfIZHwuFljGPj5UMgyd6MRMuL2Ho1hL7FDPI
+					xDBv5tMWeZJszixIsCkA9Kc1ibylDz9Ix/ke
+					H1K9XXSb/o2EIfF6sWYcj0wNvJllIHAfABEB
+					AAG0QlJQTSBQYWNrYWdlciAoVGhlIGd1eSB3
+					aG8gY3JlYXRlcyBwYWNrYWdlcykgPHBhY2th
+					Z2VyQGV4YW1wbGUuY29tPokBTgQTAQgAOBYh
+					BMwU+9636QKkbYsjdMKSn1VZ4I5DBQJals3s
+					AhsDBQsJCAcCBhUKCQgLAgQWAgMBAh4BAheA
+					AAoJEMKSn1VZ4I5D6icH/2GY2MMnmcDO+ApI
+					F6gGg9itzAHLTNcxEMl9ht1Gu3JQ/VdsvMQ6
+					lG+U8yffEmsfQebtt1UaMVXzyt0tcSOBJvVE
+					I6qc6skvfea3hqL4srtTOCwu7ZBA9gOE+eB5
+					BWBspFUVIwUO1GKT48uzV6CaODLitaxc7NrJ
+					9HYw4C4+ICCfbIJhjM/HqxLKOqVy/jsySqIH
+					K96RrjY/m8Q9Bzsi/6fj/GHkewaM8zaeNLHE
+					7MgXFZAuJ8lzjD0r2oBDJGeBKfjjz9xh26YW
+					jG/AoiolXfliTEox6p0bf820eRhdX9UdSesB
+					ROL3rkB+hM5FOT8crSPJsuGZWJ9brikfsurW
+					yU+5AQ0EWpbN7AEIAK0/PThuvsLdDGe5HeZn
+					3VdrFcD9QSOV9Xjos8zWkwx8v0t4KXPM4Gsh
+					yU2ddNjgA+00LhzjACm2ropT5vdvKPtf8lRG
+					OcWWHkiMPdDW/R3/I5S0Oh1WFNrQZwQSXn/D
+					oPnhUZNGErpZlUzF00BEltwoVWgT1n81Bp48
+					6U3oziZnUM8kxXXY2PN8aTfWjsxOSmjyu2m7
+					abeyjTqX9s++vUCQhmCNboSY1AhXF8GQl1Ce
+					mpHVv0hOuC6BeadZRXEfEF0sQogswXpFhYG4
+					GFUvVzKBn00/5phNWHvff1GDjzZzmVcRPje+
+					rH6gGP8tpQn7NL1SvrazSqSOih//FfV73EMA
+					EQEAAYkBNgQYAQgAIBYhBMwU+9636QKkbYsj
+					dMKSn1VZ4I5DBQJals3sAhsMAAoJEMKSn1VZ
+					4I5DshgIALSnLy7KL0bcqxoiEZT+P9O+gX34
+					J2NEfITlu3MZyN26LbyJS7HuN1vmuUc/UM0f
+					f7AW6eElCNFr5HQOrFELUZWiX7f4U8ihRN39
+					g1PKRGANlUcLm1Z/JnKyYbyzRK70o5A35EiX
+					EHwY62c/b8I1N4kzNKpa0eQcJ7F8XoZhau0U
+					sxqueVPeEIaHX+fjbalz67eaiFTu8MurdGKn
+					tVE1dOPYbGvZE0+HxfDOoVo05bRUH8By7dDg
+					VaI9EijrVzjA5jHPJxNIj9AQP9W8zst3l3d9
+					v8o0Pw+L4cWzv+aBFakfjKGugs6lA53fB3RC
+					fZ7OrMwCBvlTfDigK9X50K6XoP0= )
+			86400	RRSIG	OPENPGPKEY 5 4 86400 (
+					20180801054622 20180702054622 34305 example.com.
+					VKfSN+VTLxito9OaukvTYc+z9ZPPNIrGKI9z
+					CKE1EWe3OpH8XGUgWUtv3kqMSql4f0eikZ5S
+					9wrYx+KtLCI++o4gUW983b92R2HPVNDAkS1U
+					3eSurwHvp0Xi1HopHUMy38KVFrbAm0rgBxRq
+					j6RsjGRRktrYeKcvleDb/2sLTD0= )
+b.example.com.		86400	IN A	192.168.99.120
+			86400	RRSIG	A 5 3 86400 (
+					20180801054622 20180702054622 34305 example.com.
+					VFsZM6WdnxB1U5SQF2eCKRU3XpvqBDMIAWKY
+					+WPrYKJXQLXCLOCzgeqPQEmFhptuOpMAhQxb
+					yp1ou4QhpAqzafqTmROiFAOugC8am7eJgRq9
+					82TeYVrZZO+qiT3BzmOTzEWfOnvGid5BqV3K
+					hg6KDhCvJMWjUu0+jFS1hXaEtqM= )
+			86400	NSEC	repomd.example.com. A RRSIG NSEC
+			86400	RRSIG	NSEC 5 3 86400 (
+					20180801054622 20180702054622 34305 example.com.
+					pPDIYzUn9fD6xwjX67GguBiBubu3nlYRNDnD
+					JczQbJ0zwJzPJnQse4go32MiI/McP6Qn0+xX
+					pkRsvO+0FkBllishaF8f7paoFDur6fPCcu0g
+					QWeP6bRmGVFVoeV5zZOOfGFn4PkgeDjNul/x
+					Aj1G1HZd115SjW2tWhTWyvvSEcs= )

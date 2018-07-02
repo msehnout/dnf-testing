@@ -1,14 +1,26 @@
 ---
+# Fedora specific part; needed to even run Ansible
+- name: Install python and deps for ansible modules
+  raw: dnf install -y python2 python2-dnf libselinux-python glibc-langpack-en
+# - name: Update everything
+#   raw: dnf update -y 
+- name: Gather facts
+  setup:
+# Setup OS
 - name: Install list of packages
-  yum: name={{item}} state=installed
+  dnf: name={{item}} state=installed
   with_items:
+      - fish          # For friendly interactive usage :)
       - nc            # Debugging
+      - tmux          # Essential tool for terminal
       - bind          # DNS server
       - bind-utils    # DNS utilities like dig
       - rng-tools     # To generate more entropy; needed for key generation
       - git           # For development purposes
       - tcpdump       # For debugging purposes
       - psmisc        # For debugging purposes
+      - python3-gnupg
+      - python3-unbound
       - strace  
       - vim           # For development purposes
 - name: Prepare RNG sources
@@ -24,13 +36,3 @@
   shell: setenforce 0
 - name: Change file permissions
   shell: chmod -R go+rwx /vagrant
-- name: Prepare network iface
-  shell: |
-    for ADDR in $(seq 2 99); do ip addr add 127.0.0.${ADDR} dev lo; done || exit 0
-    # - name: Disable firewall
-    #   firewalld:
-    #     zone: trusted
-    #     interface: ens3
-    #     immediate: true
-    #     permanent: true
-    #     state: enabled

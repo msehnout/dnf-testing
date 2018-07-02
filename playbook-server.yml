@@ -4,6 +4,6 @@
   become_user: root
   become: yes
   roles:
-      - centos
+      - server
       - dns
       - repository
