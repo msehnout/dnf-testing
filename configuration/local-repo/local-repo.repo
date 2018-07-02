@@ -1,0 +1,11 @@
+[local-repo]
+name=Testing repository
+failovermethod=priority
+baseurl=http://192.168.99.101/f27/
+gpgkey=http://192.168.99.101/keys/packager.asc
+enabled=1
+metadata_expire=7d
+type=rpm
+gpgcheck=1
+skip_if_unavailable=True
+

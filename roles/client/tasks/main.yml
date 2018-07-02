@@ -36,3 +36,11 @@
   shell: setenforce 0
 - name: Change file permissions
   shell: chmod -R go+rwx /vagrant
+- name: Set variables
+  set_fact:
+    ta_file: '/vagrant/local-repo/trust-anchor'
+    ub_keys: '/var/lib/unbound/root.key'
+- name: Append additional trust anchor
+  shell: grep "$(cat {{ ta_file }})" {{ ub_keys }} || cat {{ ta_file }} >> {{ ub_keys }}
+- name: Copy repo configuration
+  shell: cp /vagrant/local-repo/local-repo.repo /etc/yum.repos.d/
