@@ -18,5 +18,7 @@
   raw: cp /vagrant/lighttpd/lighttpd.conf /etc/lighttpd/lighttpd.conf
 - name: Copy dirlisting config file for web server
   raw: cp /vagrant/lighttpd/dirlisting.conf /etc/lighttpd/conf.d/
+- name: Enable lighttpd
+  systemd: enabled=yes name=lighttpd
 - name: Start lighttpd
   systemd: state=restarted name=lighttpd
