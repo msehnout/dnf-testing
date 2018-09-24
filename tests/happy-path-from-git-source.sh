@@ -4,7 +4,7 @@
 set -e
 # Download dnf sources
 pushd /tmp
-DIRNAME='dnf-2.7.5-modularity-6'
+DIRNAME='dnf'
 PKGNAME='test-good-sig'
 KEYNAME='gpg-pubkey-59e08e43-5a96cdec'
 if [ ! -d "${DIRNAME}" ]; then
@@ -25,6 +25,4 @@ mv /etc/resolv.conf /tmp/resolv.conf.backup
 echo "nameserver 192.168.99.199" > /etc/resolv.conf
 rpm -q "${KEYNAME}"  && rpm -e "${KEYNAME}"
 rpm -q "${PKGNAME}" && dnf remove "${PKGNAME}"
-pwd
-ls
 PYTHONPATH=$(readlink -f .) bin/dnf-3 --repo=local-repo install "${PKGNAME}" -y
